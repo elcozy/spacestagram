@@ -6,7 +6,6 @@ import {
   Header,
   Image,
   Loader,
-  Placeholder,
   Pagination,
 } from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
@@ -48,7 +47,7 @@ const App = () => {
       setHasLoaded(true);
       console.log(state);
       setTotalData(Math.ceil(state.length / 15));
-    }
+    } // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {

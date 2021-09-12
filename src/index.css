@@ -37,10 +37,6 @@ body {
   margin-top: 2rem !important;
   margin-bottom: 1rem !important;
 }
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
 .ui.card>.content .like.icon:hover{
   opacity: 1;
