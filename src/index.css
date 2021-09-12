@@ -5,9 +5,77 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-height: 100vh;
+  height: 100vh;
 }
 
+#root{
+  max-height: 100vh;
+  height: 100vh !important;
+  overflow: hidden;
+
+}
+.spacetagram-content{
+  background:  rgb(246 246 247);
+  max-height: 72vh;
+  overflow: auto;
+}
+.spacetagram-container{
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.ui.grid{
+  margin-top: 1rem ;
+  margin-bottom: 1rem;
+
+  margin-bottom: 0;
+}
+.ui.pagination.menu{
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.ui.card>.content .like.icon:hover{
+  opacity: 1;
+  color: black !important;
+}
+.ui.card>.content .like.icon.liked{
+  opacity: 1;
+  color: #ff2733;
+}
+.my-loader{
+  height: 100%;
+  width: 100%;
+  min-width: 60vw;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ui.card, .ui.cards>.card{
+  min-height: 100% !important;
+}
+
+.go2484888251, .go4268192979{
+  -moz-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+  z-index: 0;
+}
+
+.spacetagram-like-container{
+  max-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
