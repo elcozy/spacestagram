@@ -1,52 +1,58 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-height: 100vh;
-  height: 100vh;
 }
 
-#root{
-  max-height: 100vh;
-  height: 100vh !important;
-  overflow: hidden;
 
+@media only screen and (min-width: 768px) {
+  #root {
+    max-height: 100vh;
+    height: 100vh !important;
+    overflow: hidden;
+  }
 }
-.spacetagram-content{
-  background:  rgb(246 246 247);
-  max-height: 72vh;
-  overflow: auto;
+.spacetagram-content {
+  background: rgb(246 246 247);
+  /* max-height: 72vh; */
+  /* overflow: auto; */
 }
-.spacetagram-container{
 
+@media only screen and (min-width: 768px) {
+  .spacetagram-content {
+    max-height: 72vh;
+    overflow: auto;
+  }
+}
+.spacetagram-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-.ui.grid{
-  margin-top: 1rem ;
+.ui.grid {
+  margin-top: 1rem;
   margin-bottom: 1rem;
 
   margin-bottom: 0;
 }
-.ui.pagination.menu{
+.ui.pagination.menu {
   margin-top: 2rem !important;
   margin-bottom: 1rem !important;
 }
 
-.ui.card>.content .like.icon:hover{
+.ui.card > .content .like.icon:hover {
   opacity: 1;
   color: black !important;
 }
-.ui.card>.content .like.icon.liked{
+.ui.card > .content .like.icon.liked {
   opacity: 1;
   color: #ff2733;
 }
-.my-loader{
+.my-loader {
   height: 100%;
   width: 100%;
   min-width: 60vw;
@@ -55,11 +61,13 @@ body {
   justify-content: center;
   align-items: center;
 }
-.ui.card, .ui.cards>.card{
+.ui.card,
+.ui.cards > .card {
   min-height: 100% !important;
 }
 
-.go2484888251, .go4268192979{
+.go2484888251,
+.go4268192979 {
   -moz-transform: scale(0.5);
   -webkit-transform: scale(0.5);
   -o-transform: scale(0.5);
@@ -68,10 +76,9 @@ body {
   z-index: 0;
 }
 
-.spacetagram-like-container{
+.spacetagram-like-container {
   max-height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }

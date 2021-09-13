@@ -45,7 +45,6 @@ const App = () => {
     } else {
       setState(JSON.parse(localStorage.getItem("myData")));
       setHasLoaded(true);
-      console.log(state);
       setTotalData(Math.ceil(state.length / 15));
     } // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -62,8 +61,6 @@ const App = () => {
   };
 
   const onLikeChange = (e, c) => {
-    console.log(c);
-
     const index = state.findIndex((a) => a.id === c.id);
 
     state[index].isLiked = !state[index].isLiked;
